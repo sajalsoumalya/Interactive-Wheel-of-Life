@@ -1,0 +1,186 @@
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>Work-life Balance</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <div class="logo">
+                <span class="icon fa-balance-scale"></span>
+            </div>
+            <div class="content">
+                <div class="inner">
+                    <h1>Work-life Balance</h1>
+                    <p>The Four Parameter to make your work life and Personal Life Balanced </p>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="time.html">Time Management</a></li>
+                    <li><a href="#focus">Stay Focused</a></li>
+                    <li><a href="#stress">Stress Management</a></li>
+                    <li><a href="#connectivity">Connectivity</a></li>
+                    <!--<li><a href="#elements">Elements</a></li>-->
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Time -->
+            <article id="time">
+                <h2 class="major align-center">Manage Your Time</h2>
+                <span class="image main"><img src="images/pic01.jpg" alt="" /></span>
+                <p class="align-justify">Somehow it’s already 3:00 p.m. yet you are still working on the same small task you started first thing this morning :) Most of us have been in this kind of situation and many of us find ourselves there just about every day. Despite our
+                    best effort to efficiently organised time, stay on top of our schedule and complete all of our task, we still find it hard to keep things under our control. These major problems occurred for some common time management mistakes like
+                    failing to Prioritized our important tasks or leave them in between for some other works. Ineffectively Scheduling our common tasks one of the most common pitfalls most ambitious people tend to make us to miss the time and energy they
+                    will need to complete a particular task. This behaviour is typical of a Type overachievers who think they can keep everything under control and never turn down an opportunity no matter how demanding it is.
+                </p>
+                <h3 class="align-center">Take time to make time</h3>
+                <p class="align-justify">Really, A lot of Productivity Comes Down to spending Time planning. When you're feeling crushed by a ton of work, spending time writing out a To-do list, blocking of your schedule, or prioritizing task can feel like a waste of time but
+                    stopping to plan will wind up saving your time and Stress in the End
+
+                </p>
+                <pre><code class="align-center">So now make your Schedule and Stay Organized
+Our App will so You How much Time you are busy and 
+how much time you are free from your daily schedule </code></pre>
+
+                <canvas id="chart" width="400" height="400"></canvas>
+            </article>
+
+            <!-- Focus -->
+            <article id="focus">
+                <h2 class="major">Stay Focused</h2>
+                <span class="image main"><img src="images/pic02.jpg" alt="" /></span>
+                <p class="align-justify">In today’s Life We, the Busy Human beings has become too much distracted by other glances that we are losing our main goals. This is the most common and basic reason why we failed to achieve our goals. The Most Distracting Part thing in
+                    our life is Mobile Phone. Not only Mobiles but also every Electronic gadgets including internet connections sis also behind this.</p>
+                <pre><code class="align-center">So Now Stay Focused All The time with our app,
+You can schedule your daily focus time
+Also you can put your mobile to focus mode 
+We will block all the notification For You</code></pre>
+            </article>
+            <!-- Stress -->
+            <article id="stress">
+                <h2 class="major">Stress</h2>
+                <span class="image main"><img src="images/pic02.jpg" alt="" /></span>
+                <p class="align-justify">
+                    Stress is a feeling of emotional or physical tension. It can come from any event or through that makes you feel frustrated, angry and nervous. In today's life if we go through a person, we have come to know that approx. 60℅ of 100℅ people are victim of
+                    anxiety and Depression which come from stress.
+                </p>
+                <pre><code class="align-center">So Now Stay Focused All The time with our app,
+You can schedule your daily focus time
+Also you can put your mobile to focus mode 
+We will block all the notification For You</code></pre>
+            </article>
+
+            <!-- Connectivity -->
+            <article id="connectivity">
+                <h2 class="major">Stay Connected</h2>
+                <span class="image main"><img src="images/pic03.jpg" alt="" /></span>
+                <p class="align-justify">Though in today's life we are very developed for our technology and able to connect virtually with people from any place of the world. But in today's life we were too busy to connect physically with our friends, relative. Even if we want
+                    to make time but we cannot make it form the busy schedule. As the result we lost our special ones in many cases.</p>
+                <pre><code class="align-center">So Now Stay connected with your friends and Family easily 
+Our App will alerts you when you special 
+(Friend, Relatives) ones are nearby 
+So that you will collaborate with them.</code></pre>
+            </article>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <p class="copyright">&copy; 2021 Design: soumalya chowdhury</a>.</p>
+        </footer>
+
+    </div>
+
+    <!-- BG -->
+    <div id="bg"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script>
+        var ctx = document.getElementById("chart");
+        const data = {
+            labels: [
+                'Eating',
+                'Drinking',
+                'Sleeping',
+                'Designing',
+                'Coding',
+                'Cycling',
+                'Running'
+            ],
+            datasets: [{
+                label: 'Work Balance Life',
+                data: [6, 5, 7, 8, 5, 5, 4],
+                fill: false,
+                backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                borderColor: 'red',
+                //pointBackgroundColor: 'rgb(255, 99, 132)',
+                //pointBorderColor: '#fff',
+                pointHoverBackgroundColor: '#fff',
+                pointHoverBorderColor: 'rgb(255, 99, 132)',
+
+            }]
+        };
+        var mychart = new Chart(ctx, {
+            type: 'radar',
+            data: data,
+            options: {
+                elements: {
+                    line: {
+                        borderWidth: 1
+                    }
+                },
+                scale: {
+                    ticks: {
+                        min: 0,
+                        max: 10
+                    },
+                    gridLines: {
+                        color: 'rgb(217, 217, 217)'
+                    },
+                }
+            },
+            scaleOverride: true,
+            scaleSteps: 5,
+            scaleStepWidth: 1,
+            scaleStartValue: 0
+        });
+        myChart.options.title.text = "top of chart";
+        myChart.options.legend.display = false;
+    </script>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/8.4.3/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+				https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+</body>
+
+</html>
