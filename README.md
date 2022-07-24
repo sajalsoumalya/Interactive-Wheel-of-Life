@@ -1,4 +1,5 @@
-﻿#Interactive Wheel of Life: A Self-Monitoring Tool*
+﻿
+# Interactive Wheel of Life: A Self-Monitoring Tool
 
 **Brief Details of the Project:**
 
@@ -28,6 +29,6 @@ There is always a need to improve overall work performance, lower the stress lev
 
 **Author:**
 
-Soumalya Chowdhury , JIS University, Kolkata, India, 700109
-Nilanjan Dey, JIS University, Kolkata, India, 700109
-Soumi Majumder, Vidyasagar University, Midnapore, West Bengal, 721102 
+ Soumalya Chowdhury , JIS University, Kolkata, India, 700109  
+ Nilanjan Dey, JIS University, Kolkata, India, 700109  
+ Soumi Majumder, Vidyasagar University, Midnapore, West Bengal, 721102  
