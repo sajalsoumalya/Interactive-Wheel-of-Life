@@ -1,4 +1,4 @@
-﻿*#Interactive Wheel of Life: A Self-Monitoring Tool*
+﻿#Interactive Wheel of Life: A Self-Monitoring Tool*
 
 **Brief Details of the Project:**
 
